@@ -1,7 +1,7 @@
 ---
 # see https://github.com/nextapps-de/flexsearch#tokenizer-prefix-search for options
 tokenizer: "full" # strict, forward, reverse, full
-custom_domain: "https://hof-halle-wittenberg.github.io/type/"
+custom_domain: "https://hof-halle-wittenberg.github.io/vocabs/"
 fail_on_validation: false
 searchableAttributes:
   - "prefLabel" # you should not delete this one

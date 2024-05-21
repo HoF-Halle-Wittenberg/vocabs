@@ -6,6 +6,7 @@
 
 area: a skos:ConceptScheme ;
     dct:title "University Mission"@en, "Leistungsbereich der Hochschule"@de ;
+    dct:description "Eine Werteliste um einer Ressource den adressierten Leistungsbereich der Hochschule zuzuordnen."@de, "A value list to assign the addressed mission of the university to a resource."@en ;
     dct:creator "Justus Henke"@de ;
     dct:created "2024-05-21"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;

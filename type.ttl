@@ -6,6 +6,7 @@
 
 type: a skos:ConceptScheme ;
     dct:title "Content Type"@en, "Inhaltstyp"@de ;
+    dct:description "Eine Werteliste um den grundlegenden Inhaltstyp einer Ressource zuzuordnen."@de, "A value list to assign the basic content type to a resource."@en ;
     dct:creator "Justus Henke"@de ;
     dct:created "2024-05-21"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;

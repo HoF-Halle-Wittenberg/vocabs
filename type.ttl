@@ -1,0 +1,30 @@
+@base <https://hof-halle-wittenberg.github.io/type/>
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdo: <https://schema.org/> .
+
+type: a skos:ConceptScheme ;
+    dct:title "Content Type"@en, "Inhaltstyp"@de ;
+    dct:creator "Justus Henke"@de ;
+    dct:created "2024-05-21"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept type:LearningResource, type:HowToTip, type:HowToDirection .
+
+type:LearningResource a skos:Concept ;
+    skos:prefLabel "Lernressource"@de, "Learning Resource"@en;
+    skos:definition "Der Typ LearningResource kann verwendet werden, um CreativeWorks (physisch oder digital) zu kennzeichnen, die eine besondere und ausdrückliche Ausrichtung auf das Lernen, die Ausbildung, den Erwerb von Fähigkeiten und andere Bildungszwecke haben."@de ;
+    skos:exactMatch sdo:type ;
+    skos:topConceptOf type: .
+
+type:HowToTip a skos:Concept ;
+    skos:prefLabel "Anleitung"@de, "How To Tip"@en ;
+    skos:definition "Eine Erläuterung in der Anleitung, wie ein Ergebnis erreicht werden kann. Sie liefert zusätzliche Informationen über eine Technik, ein Angebot, die Vorlieben des Autors usw. Sie kann erklären, was getan werden könnte oder was nicht getan werden sollte, schreibt aber nicht vor, was getan werden sollte."@de, "An explanation in the instructions for how to achieve a result. It provides supplementary information about a technique, supply, author's preference, etc. It can explain what could be done, or what should not be done, but doesn't specify what should be done (see HowToDirection)."@en ;
+    skos:exactMatch sdo:HowToTip ;
+    skos:topConceptOf type: .
+
+type:HowToDirection a skos:Concept ;
+    skos:prefLabel "Anweisung"@de, "How To Direction"@en ;
+    skos:definition "Eine Anweisung, die eine einzelne Handlung in den Anweisungen angibt, wie ein Ergebnis zu erreichen ist."@de, "A direction indicating a single action to do in the instructions for how to achieve a result."@en ;
+    skos:exactMatch sdo:HowToDirection ;
+    skos:topConceptOf type: .
+

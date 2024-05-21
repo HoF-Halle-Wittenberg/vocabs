@@ -1,21 +1,22 @@
 {
-  "id": "https://hof-halle-wittenberg.github.io/type/LearningResource",
+  "id": "https://hof-halle-wittenberg.github.io/type/type/HowToTip",
   "type": "Concept",
   "prefLabel": {
-    "en": "Learning Resource",
-    "de": "Lernressource"
+    "en": "How To Tip",
+    "de": "Anleitung"
   },
   "definition": {
-    "de": "Der Typ LearningResource kann verwendet werden, um CreativeWorks (physisch oder digital) zu kennzeichnen, die eine besondere und ausdrückliche Ausrichtung auf das Lernen, die Ausbildung, den Erwerb von Fähigkeiten und andere Bildungszwecke haben."
+    "en": "An explanation in the instructions for how to achieve a result. It provides supplementary information about a technique, supply, author's preference, etc. It can explain what could be done, or what should not be done, but doesn't specify what should be done (see HowToDirection).",
+    "de": "Eine Erläuterung in der Anleitung, wie ein Ergebnis erreicht werden kann. Sie liefert zusätzliche Informationen über eine Technik, ein Angebot, die Vorlieben des Autors usw. Sie kann erklären, was getan werden könnte oder was nicht getan werden sollte, schreibt aber nicht vor, was getan werden sollte."
   },
   "exactMatch": [
     {
-      "id": "schema:type"
+      "id": "schema:HowToTip"
     }
   ],
   "inScheme": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/",
+      "id": "https://hof-halle-wittenberg.github.io/type/type/",
       "title": {
         "en": "Content Type",
         "de": "Inhaltstyp"
@@ -24,12 +25,12 @@
   ],
   "inSchemeAll": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/"
+      "id": "https://hof-halle-wittenberg.github.io/type/type/"
     }
   ],
   "topConceptOf": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/",
+      "id": "https://hof-halle-wittenberg.github.io/type/type/",
       "title": {
         "en": "Content Type",
         "de": "Inhaltstyp"

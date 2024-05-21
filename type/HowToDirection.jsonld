@@ -1,22 +1,22 @@
 {
-  "id": "https://hof-halle-wittenberg.github.io/type/HowToTip",
+  "id": "https://hof-halle-wittenberg.github.io/type/type/HowToDirection",
   "type": "Concept",
   "prefLabel": {
-    "en": "How To Tip",
-    "de": "Anleitung"
+    "en": "How To Direction",
+    "de": "Anweisung"
   },
   "definition": {
-    "en": "An explanation in the instructions for how to achieve a result. It provides supplementary information about a technique, supply, author's preference, etc. It can explain what could be done, or what should not be done, but doesn't specify what should be done (see HowToDirection).",
-    "de": "Eine Erläuterung in der Anleitung, wie ein Ergebnis erreicht werden kann. Sie liefert zusätzliche Informationen über eine Technik, ein Angebot, die Vorlieben des Autors usw. Sie kann erklären, was getan werden könnte oder was nicht getan werden sollte, schreibt aber nicht vor, was getan werden sollte."
+    "en": "A direction indicating a single action to do in the instructions for how to achieve a result.",
+    "de": "Eine Anweisung, die eine einzelne Handlung in den Anweisungen angibt, wie ein Ergebnis zu erreichen ist."
   },
   "exactMatch": [
     {
-      "id": "schema:HowToTip"
+      "id": "schema:HowToDirection"
     }
   ],
   "inScheme": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/",
+      "id": "https://hof-halle-wittenberg.github.io/type/type/",
       "title": {
         "en": "Content Type",
         "de": "Inhaltstyp"
@@ -25,12 +25,12 @@
   ],
   "inSchemeAll": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/"
+      "id": "https://hof-halle-wittenberg.github.io/type/type/"
     }
   ],
   "topConceptOf": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/",
+      "id": "https://hof-halle-wittenberg.github.io/type/type/",
       "title": {
         "en": "Content Type",
         "de": "Inhaltstyp"

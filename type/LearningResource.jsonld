@@ -1,22 +1,21 @@
 {
-  "id": "https://hof-halle-wittenberg.github.io/type/HowToDirection",
+  "id": "https://hof-halle-wittenberg.github.io/type/type/LearningResource",
   "type": "Concept",
   "prefLabel": {
-    "en": "How To Direction",
-    "de": "Anweisung"
+    "en": "Learning Resource",
+    "de": "Lernressource"
   },
   "definition": {
-    "en": "A direction indicating a single action to do in the instructions for how to achieve a result.",
-    "de": "Eine Anweisung, die eine einzelne Handlung in den Anweisungen angibt, wie ein Ergebnis zu erreichen ist."
+    "de": "Der Typ LearningResource kann verwendet werden, um CreativeWorks (physisch oder digital) zu kennzeichnen, die eine besondere und ausdrückliche Ausrichtung auf das Lernen, die Ausbildung, den Erwerb von Fähigkeiten und andere Bildungszwecke haben."
   },
   "exactMatch": [
     {
-      "id": "schema:HowToDirection"
+      "id": "schema:type"
     }
   ],
   "inScheme": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/",
+      "id": "https://hof-halle-wittenberg.github.io/type/type/",
       "title": {
         "en": "Content Type",
         "de": "Inhaltstyp"
@@ -25,12 +24,12 @@
   ],
   "inSchemeAll": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/"
+      "id": "https://hof-halle-wittenberg.github.io/type/type/"
     }
   ],
   "topConceptOf": [
     {
-      "id": "https://hof-halle-wittenberg.github.io/type/",
+      "id": "https://hof-halle-wittenberg.github.io/type/type/",
       "title": {
         "en": "Content Type",
         "de": "Inhaltstyp"

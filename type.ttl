@@ -13,7 +13,7 @@ type: a skos:ConceptScheme ;
 
 type:LearningResource a skos:Concept ;
     skos:prefLabel "Lernressource"@de, "Learning Resource"@en;
-    skos:definition "Der Typ LearningResource kann verwendet werden, um CreativeWorks (physisch oder digital) zu kennzeichnen, die eine besondere und ausdrückliche Ausrichtung auf das Lernen, die Ausbildung, den Erwerb von Fähigkeiten und andere Bildungszwecke haben."@de ;
+    skos:definition "Der Typ LearningResource kann verwendet werden, um CreativeWorks (physisch oder digital) zu kennzeichnen, die eine besondere und ausdrückliche Ausrichtung auf das Lernen, die Ausbildung, den Erwerb von Fähigkeiten und andere Bildungszwecke haben."@de, "The LearningResource type can be used to indicate CreativeWorks (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes."@en ;
     skos:exactMatch sdo:type ;
     skos:topConceptOf type: .
 

@@ -1,1 +1,1 @@
-{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://hof-halle-wittenberg.github.io/vocabs/type/","fields":{"languages":["en","de"]}}}]}}}
+{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://hof-halle-wittenberg.github.io/vocabs/area/","fields":{"languages":["en","de"]}}},{"node":{"id":"https://hof-halle-wittenberg.github.io/vocabs/type/","fields":{"languages":["en","de"]}}}]}}}

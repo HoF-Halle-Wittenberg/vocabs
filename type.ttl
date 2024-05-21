@@ -1,7 +1,8 @@
-@base <https://hof-halle-wittenberg.github.io/type/>
+@prefix type: <https://hof-halle-wittenberg.github.io/type/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 type: a skos:ConceptScheme ;
     dct:title "Content Type"@en, "Inhaltstyp"@de ;
@@ -27,4 +28,3 @@ type:HowToDirection a skos:Concept ;
     skos:definition "Eine Anweisung, die eine einzelne Handlung in den Anweisungen angibt, wie ein Ergebnis zu erreichen ist."@de, "A direction indicating a single action to do in the instructions for how to achieve a result."@en ;
     skos:exactMatch sdo:HowToDirection ;
     skos:topConceptOf type: .
-

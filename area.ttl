@@ -9,7 +9,7 @@ area: a skos:ConceptScheme ;
     dct:creator "Justus Henke"@de ;
     dct:created "2024-05-21"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept area:LearningResource, area:HowToTip, area:HowToDirection .
+    skos:hasTopConcept area:General, area:Teaching, area:Research, area:Transfer .
 
 area:General a skos:Concept ;
     skos:prefLabel "bereichsübergreifend"@de, "general"@en;

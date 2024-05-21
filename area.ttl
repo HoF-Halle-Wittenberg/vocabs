@@ -1,0 +1,33 @@
+@prefix area: <https://hof-halle-wittenberg.github.io/vocabs/area/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+area: a skos:ConceptScheme ;
+    dct:title "University Mission"@en, "Leistungsbereich der Hochschule"@de ;
+    dct:creator "Justus Henke"@de ;
+    dct:created "2024-05-21"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept area:LearningResource, area:HowToTip, area:HowToDirection .
+
+area:General a skos:Concept ;
+    skos:prefLabel "bereichsübergreifend"@de, "general"@en;
+    skos:definition "Die Ressource ist nicht auf einen bestimmten Leistungsbereich der Hochschule beschränkt"@de, "The resource is not limited to a specific mission of the university"@en ;
+    skos:topConceptOf area: .
+
+area:Teaching a skos:Concept ;
+    skos:prefLabel "Lehre/Studium"@de, "Teaching/Studies"@en ;
+    skos:definition "Die Ressource richtet sich insbesondere an den Leistungsbereich Lehre und Studium."@de, "The resource is aimed in particular at the mission of teaching and studies."@en ;
+    skos:topConceptOf area: .
+
+area:Research a skos:Concept ;
+    skos:prefLabel "Forschung"@de, "Research"@en ;
+    skos:definition "Die Ressource richtet sich insbesondere an den Leistungsbereich Forschung."@de, "The resource is aimed in particular at the mission of research."@en ;
+    skos:topConceptOf area: .
+
+area:Transfer a skos:Concept ;
+    skos:prefLabel "Transfer/Third Mission"@de, "Research"@en ;
+    skos:definition "Die Ressource richtet sich insbesondere an den Leistungsbereich Transfer/Third Mission."@de, "The resource is aimed in particular at the transfer or third mission."@en ;
+    skos:topConceptOf area: .
+

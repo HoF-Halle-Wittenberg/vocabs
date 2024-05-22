@@ -15,20 +15,157 @@ orgContext: a skos:ConceptScheme ;
 orgContext:DidacticSupport a skos:Concept ;
     skos:prefLabel "didaktischer Support"@de, "didactic support"@en ;
     skos:definition "Die Ressource bietet Unterstützung im Bereich der Didaktik."@de, "The resource provides support in the area of didactics."@en ;
-    skos:topConceptOf orgContext: .
+    skos:topConceptOf orgContext: ;
+    skos:narrower orgContext:FurtherEducation, orgContext:Training, orgContext:Consultation, orgContext:ScholarshipAllocation, orgContext:Mentoring, orgContext:SupportEvaluation, orgContext:Internationalization, orgContext:IncentiveDevelopment .
 
 orgContext:LegalSupport a skos:Concept ;
     skos:prefLabel "rechtlicher Support"@de, "legal support"@en ;
     skos:definition "Die Ressource bietet Unterstützung im Bereich der rechtlichen Fragen."@de, "The resource provides support in the area of legal matters."@en ;
-    skos:topConceptOf orgContext: .
+    skos:topConceptOf orgContext: ;
+    skos:narrower orgContext:QualityManagement, orgContext:LegalDepartment, orgContext:DataProtectionOfficer, orgContext:EqualOpportunitiesOfficer .
 
 orgContext:InfrastructureSupport a skos:Concept ;
     skos:prefLabel "Support Infrastruktur"@de, "infrastructure support"@en ;
     skos:definition "Die Ressource bietet Unterstützung im Bereich der Infrastruktur."@de, "The resource provides support in the area of infrastructure."@en ;
-    skos:topConceptOf orgContext: .
+    skos:topConceptOf orgContext: ;
+    skos:narrower orgContext:SchedulingAndRoomPlanning, orgContext:TechnologyAcquisition, orgContext:ManualDevelopment, orgContext:LicenseProcurement, orgContext:SoftwareDevelopment .
 
 orgContext:StrategicSupport a skos:Concept ;
     skos:prefLabel "strategischer Support"@de, "strategic support"@en ;
     skos:definition "Die Ressource bietet Unterstützung im Bereich der strategischen Planung."@de, "The resource provides support in the area of strategic planning."@en ;
-    skos:topConceptOf orgContext: .
+    skos:topConceptOf orgContext: ;
+    skos:narrower orgContext:ProgramIntroduction, orgContext:ExaminationAdministration, orgContext:DevelopmentPlans, orgContext:GuidelineDevelopment, orgContext:Appointments, orgContext:Enrollment, orgContext:ExaminationAffairs, orgContext:Evaluation, orgContext:InterUniversityNetworking .
 
+orgContext:QualityManagement a skos:Concept ;
+    skos:prefLabel "Qualitätsmanagement"@de, "quality management"@en ;
+    skos:broader orgContext:LegalSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:LegalDepartment a skos:Concept ;
+    skos:prefLabel "Rechtsabteilung"@de, "legal department"@en ;
+    skos:broader orgContext:LegalSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:DataProtectionOfficer a skos:Concept ;
+    skos:prefLabel "Datenschutzbeauftragte"@de, "data protection officer"@en ;
+    skos:broader orgContext:LegalSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:EqualOpportunitiesOfficer a skos:Concept ;
+    skos:prefLabel "Gleichstellungsbeauftragte"@de, "equal opportunities officer"@en ;
+    skos:broader orgContext:LegalSupport ;
+    skos:inScheme orgContext: .
+
+
+
+orgContext:SchedulingAndRoomPlanning a skos:Concept ;
+    skos:prefLabel "Stunden- und Raumplanung"@de, "scheduling and room planning"@en ;
+    skos:broader orgContext:InfrastructureSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:TechnologyAcquisition a skos:Concept ;
+    skos:prefLabel "Anschaffung von Technik"@de, "technology acquisition"@en ;
+    skos:broader orgContext:InfrastructureSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:ManualDevelopment a skos:Concept ;
+    skos:prefLabel "Erarbeitung von Anleitungen"@de, "manual development"@en ;
+    skos:broader orgContext:InfrastructureSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:LicenseProcurement a skos:Concept ;
+    skos:prefLabel "Beschaffung von Lizenzen"@de, "license procurement"@en ;
+    skos:broader orgContext:InfrastructureSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:SoftwareDevelopment a skos:Concept ;
+    skos:prefLabel "Softwareentwicklung"@de, "software development"@en ;
+    skos:broader orgContext:InfrastructureSupport ;
+    skos:inScheme orgContext: .
+
+
+
+orgContext:ProgramIntroduction a skos:Concept ;
+    skos:prefLabel "Einführung von Studiengängen"@de, "program introduction"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:ExaminationAdministration a skos:Concept ;
+    skos:prefLabel "Abnahme von Prüfungen"@de, "examination administration"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:DevelopmentPlans a skos:Concept ;
+    skos:prefLabel "Entwicklung Hochschulentwicklungspläne"@de, "development plans"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:GuidelineDevelopment a skos:Concept ;
+    skos:prefLabel "Entwicklung Leitbilder"@de, "guideline development"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Appointments a skos:Concept ;
+    skos:prefLabel "Berufungen"@de, "appointments"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Enrollment a skos:Concept ;
+    skos:prefLabel "Immatrikulation"@de, "enrollment"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:ExaminationAffairs a skos:Concept ;
+    skos:prefLabel "Prüfungswesen"@de, "examination affairs"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Evaluation a skos:Concept ;
+    skos:prefLabel "Evaluation"@de, "evaluation"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:InterUniversityNetworking a skos:Concept ;
+    skos:prefLabel "Hochschulübergreifende Vernetzung"@de, "inter-university networking"@en ;
+    skos:broader orgContext:StrategicSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:FurtherEducation a skos:Concept ;
+    skos:prefLabel "Weiterbildung"@de, "further education"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Training a skos:Concept ;
+    skos:prefLabel "Schulungen"@de, "training"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Consultation a skos:Concept ;
+    skos:prefLabel "Beratung"@de, "consultation"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:ScholarshipAllocation a skos:Concept ;
+    skos:prefLabel "Vergabe von Stipendien"@de, "scholarship allocation"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Mentoring a skos:Concept ;
+    skos:prefLabel "Mentoring für Studierende"@de, "mentoring for students"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:SupportEvaluation a skos:Concept ;
+    skos:prefLabel "Evaluation"@de, "evaluation"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:Internationalization a skos:Concept ;
+    skos:prefLabel "Internationalisierung"@de, "internationalization"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .
+
+orgContext:IncentiveDevelopment a skos:Concept ;
+    skos:prefLabel "Entwicklung von Anreizen für gute Lehre"@de, "incentive development for good teaching"@en ;
+    skos:broader orgContext:DidacticSupport ;
+    skos:inScheme orgContext: .

@@ -7,7 +7,9 @@ Dieses Repository enthält verschiedene Vokabulare zur Beschreibung von Ressourc
 **IRI:** `https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/`
 
 **Beschreibung:** Eine Werteliste, um einer Ressource den organisatorischen Kontext zuzuordnen.
+
 **Erstellt von:** Justus Henke
+
 **Erstellungsdatum:** 2024-05-21
 
 **Lizenz:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -23,23 +25,28 @@ Dieses Repository enthält verschiedene Vokabulare zur Beschreibung von Ressourc
 **IRI:** `https://hof-halle-wittenberg.github.io/vocabs/type/`
 
 **Beschreibung:** Eine Werteliste, um den grundlegenden Inhaltstyp einer Ressource zuzuordnen.
+
 **Erstellt von:** Justus Henke
+
 **Erstellungsdatum:** 2024-05-21
 
 **Lizenz:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Werte-Labels:
-- **Learning Resource (Lernressource)**: Die Ressource dient als Lernmaterial.
-- **HowTo Tip (HowTo-Tipp)**: Die Ressource gibt praktische Tipps zu einem bestimmten Thema.
-- **HowTo Direction (HowTo-Anleitung)**: Die Ressource bietet Schritt-für-Schritt-Anleitungen zu einem bestimmten Thema.
+- **Learning Resource (Lernressource)**: Die Ressource dient als Lernmaterial zu einem bestimmten Thema.
+- **HowTo Tip (Anleitung)**: Die Ressource gibt praktische Anleitungen zu einem bestimmten Thema.
+- **HowTo Direction (Anweisung/Vorschrift)**: Die Ressource bietet konkrete Anweisungen zu einem bestimmten Thema.
 
 ## University Mission
 
 **IRI:** `https://hof-halle-wittenberg.github.io/vocabs/area/`
 
 **Beschreibung:** Eine Werteliste, um einer Ressource den adressierten Leistungsbereich der Hochschule zuzuordnen.
+
 **Erstellt von:** Justus Henke
+
 **Erstellungsdatum:** 2024-05-21
+
 **Lizenz:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Werte-Labels:

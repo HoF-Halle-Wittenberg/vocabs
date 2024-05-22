@@ -56,8 +56,6 @@ orgContext:EqualOpportunitiesOfficer a skos:Concept ;
     skos:broader orgContext:LegalSupport ;
     skos:inScheme orgContext: .
 
-
-
 orgContext:SchedulingAndRoomPlanning a skos:Concept ;
     skos:prefLabel "Stunden- und Raumplanung"@de, "scheduling and room planning"@en ;
     skos:broader orgContext:InfrastructureSupport ;
@@ -82,8 +80,6 @@ orgContext:SoftwareDevelopment a skos:Concept ;
     skos:prefLabel "Softwareentwicklung"@de, "software development"@en ;
     skos:broader orgContext:InfrastructureSupport ;
     skos:inScheme orgContext: .
-
-
 
 orgContext:ProgramIntroduction a skos:Concept ;
     skos:prefLabel "Einführung von Studiengängen"@de, "program introduction"@en ;

@@ -15,7 +15,7 @@ type: a skos:ConceptScheme ;
 type:LearningResource a skos:Concept ;
     skos:prefLabel "Lernressource"@de, "Learning Resource"@en;
     skos:definition "Der Typ LearningResource kann verwendet werden, um CreativeWorks (physisch oder digital) zu kennzeichnen, die eine besondere und ausdrückliche Ausrichtung auf das Lernen, die Ausbildung, den Erwerb von Fähigkeiten und andere Bildungszwecke haben."@de, "The LearningResource type can be used to indicate CreativeWorks (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes."@en ;
-    skos:exactMatch sdo:type ;
+    skos:exactMatch sdo:LearningResource ;
     skos:topConceptOf type: .
 
 type:HowToTip a skos:Concept ;
@@ -26,6 +26,6 @@ type:HowToTip a skos:Concept ;
 
 type:HowToDirection a skos:Concept ;
     skos:prefLabel "Anweisung"@de, "How To Direction"@en ;
-    skos:definition "Eine Anweisung, die eine einzelne Handlung in den Anweisungen angibt, wie ein Ergebnis zu erreichen ist."@de, "A direction indicating a single action to do in the instructions for how to achieve a result."@en ;
+    skos:definition "Eine Anweisung, die eine einzelne Handlung angibt, wie ein Ergebnis zu erreichen ist."@de, "A direction indicating a single action to do in the instructions for how to achieve a result."@en ;
     skos:exactMatch sdo:HowToDirection ;
     skos:topConceptOf type: .

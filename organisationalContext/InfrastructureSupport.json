@@ -9,6 +9,43 @@
     "en": "The resource provides support in the area of infrastructure.",
     "de": "Die Ressource bietet Unterstützung im Bereich der Infrastruktur."
   },
+  "narrower": [
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/SchedulingAndRoomPlanning",
+      "prefLabel": {
+        "en": "scheduling and room planning",
+        "de": "Stunden- und Raumplanung"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/TechnologyAcquisition",
+      "prefLabel": {
+        "en": "technology acquisition",
+        "de": "Anschaffung von Technik"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/ManualDevelopment",
+      "prefLabel": {
+        "en": "manual development",
+        "de": "Erarbeitung von Anleitungen"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/LicenseProcurement",
+      "prefLabel": {
+        "en": "license procurement",
+        "de": "Beschaffung von Lizenzen"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/SoftwareDevelopment",
+      "prefLabel": {
+        "en": "software development",
+        "de": "Softwareentwicklung"
+      }
+    }
+  ],
   "inScheme": [
     {
       "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/",

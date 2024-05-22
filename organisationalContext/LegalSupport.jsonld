@@ -9,6 +9,36 @@
     "en": "The resource provides support in the area of legal matters.",
     "de": "Die Ressource bietet Unterstützung im Bereich der rechtlichen Fragen."
   },
+  "narrower": [
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/QualityManagement",
+      "prefLabel": {
+        "en": "quality management",
+        "de": "Qualitätsmanagement"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/LegalDepartment",
+      "prefLabel": {
+        "en": "legal department",
+        "de": "Rechtsabteilung"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/DataProtectionOfficer",
+      "prefLabel": {
+        "en": "data protection officer",
+        "de": "Datenschutzbeauftragte"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/EqualOpportunitiesOfficer",
+      "prefLabel": {
+        "en": "equal opportunities officer",
+        "de": "Gleichstellungsbeauftragte"
+      }
+    }
+  ],
   "inScheme": [
     {
       "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/",

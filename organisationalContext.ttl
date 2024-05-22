@@ -1,0 +1,34 @@
+@prefix orgContext: <https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+orgContext: a skos:ConceptScheme ;
+    dct:title "Organisational Context"@en, "Organisationaler Kontext"@de ;
+    dct:description "Eine Werteliste um einer Ressource den organisatorischen Kontext zuzuordnen."@de, "A value list to assign the organizational context to a resource."@en ;
+    dct:creator "Justus Henke"@de ;
+    dct:created "2024-05-21"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept orgContext:DidacticSupport, orgContext:LegalSupport, orgContext:InfrastructureSupport, orgContext:StrategicSupport .
+
+orgContext:DidacticSupport a skos:Concept ;
+    skos:prefLabel "didaktischer Support"@de, "didactic support"@en ;
+    skos:definition "Die Ressource bietet Unterstützung im Bereich der Didaktik."@de, "The resource provides support in the area of didactics."@en ;
+    skos:topConceptOf orgContext: .
+
+orgContext:LegalSupport a skos:Concept ;
+    skos:prefLabel "rechtlicher Support"@de, "legal support"@en ;
+    skos:definition "Die Ressource bietet Unterstützung im Bereich der rechtlichen Fragen."@de, "The resource provides support in the area of legal matters."@en ;
+    skos:topConceptOf orgContext: .
+
+orgContext:InfrastructureSupport a skos:Concept ;
+    skos:prefLabel "Support Infrastruktur"@de, "infrastructure support"@en ;
+    skos:definition "Die Ressource bietet Unterstützung im Bereich der Infrastruktur."@de, "The resource provides support in the area of infrastructure."@en ;
+    skos:topConceptOf orgContext: .
+
+orgContext:StrategicSupport a skos:Concept ;
+    skos:prefLabel "strategischer Support"@de, "strategic support"@en ;
+    skos:definition "Die Ressource bietet Unterstützung im Bereich der strategischen Planung."@de, "The resource provides support in the area of strategic planning."@en ;
+    skos:topConceptOf orgContext: .
+

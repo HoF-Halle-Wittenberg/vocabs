@@ -1,59 +1,59 @@
-# SkoHub Pages
+# Vokabulare für organisatorische Kontexte und Inhaltstypen
 
-This is an example repository (formerly named `skohub-docker-vocabs`) to show how you can publish your SKOS vocabulary using GitHub infrastructure (Actions and Pages).
+Dieses Repository enthält verschiedene Vokabulare zur Beschreibung von Ressourcen im Hochschulkontext. Die Vokabulare sind in Turtle-Syntax definiert und umfassen Wertelisten für organisatorische Kontexte, Inhaltstypen und Leistungsbereiche der Hochschule.
 
-Every time a change is made to a vocabulary a GitHub-workflow-action is triggered to publish the most recent vocabulary to the `gh-pages`-branch, which is used by GitHub pages.
-It spins up a Docker container made from [SkoHub Vocabs](https://github.com/hbz/skohub-vocabs).
+## Organisational Context
 
-## Usage
+**IRI:** `https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/`
 
-If you want to reuse this repo and have your vocabulary automatically pushed und published via GitHub-Pages, follow these steps:
+**Beschreibung:** Eine Werteliste, um einer Ressource den organisatorischen Kontext zuzuordnen.
+**Erstellt von:** Justus Henke
+**Erstellungsdatum:** 2024-05-21
 
-1. Fork this repo. **Uncheck the box to only fork the main branch**.
-1. Go to "Actions" tab and if not already activated, activate GitHub Actions.
-1. Go to "Settings", navigate to the "Pages" setting and select `gh-pages` as the branch your site is being built from. 
-1. Go back to the main page of your repo and click the little gear icon in the top right of the "About" section. Check the box at "Use your GitHub Pages website".
-1. Add a commit to the main branch and your vocabulary will be automatically published (sometimes it takes a little to see the changes, remember to do some hard refreshing).
+**Lizenz:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
-Any issues? Please open up a issue [here](https://github.com/skohub-io/skohub-pages/issues)
+### Werte-Labels:
+- **Didactic Support (didaktischer Support)**: Die Ressource bietet Unterstützung im Bereich der Didaktik.
+- **Legal Support (rechtlicher Support)**: Die Ressource bietet Unterstützung im Bereich der rechtlichen Fragen.
+- **Infrastructure Support (Support Infrastruktur)**: Die Ressource bietet Unterstützung im Bereich der Infrastruktur.
+- **Strategic Support (strategischer Support)**: Die Ressource bietet Unterstützung im Bereich der strategischen Planung.
 
-## Custom Domain
+## Content Type
 
-If you want to host your vocabularies under your GitHub pages domain (so no W3 perma-id or purl.org redirect), you have to provide that domain in the [`config.yaml`](./config.yaml).
+**IRI:** `https://hof-halle-wittenberg.github.io/vocabs/type/`
 
-Example:
+**Beschreibung:** Eine Werteliste, um den grundlegenden Inhaltstyp einer Ressource zuzuordnen.
+**Erstellt von:** Justus Henke
+**Erstellungsdatum:** 2024-05-21
 
-Your GitHub Pages domain is: `https://skohub-io.github.io/skohub-pages/`
-Then provide `https://skohub-io.github.io/skohub-pages/` as `custom_domain` in your `config.yaml`.
+**Lizenz:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
-The base of your concept scheme could then be something like: `https://skohub-io.github.io/skohub-pages/colours/`
+### Werte-Labels:
+- **Learning Resource (Lernressource)**: Die Ressource dient als Lernmaterial.
+- **HowTo Tip (HowTo-Tipp)**: Die Ressource gibt praktische Tipps zu einem bestimmten Thema.
+- **HowTo Direction (HowTo-Anleitung)**: Die Ressource bietet Schritt-für-Schritt-Anleitungen zu einem bestimmten Thema.
 
-Notice that this will apply to all your hosted vocabularies.
+## University Mission
 
-## Troubleshooting
+**IRI:** `https://hof-halle-wittenberg.github.io/vocabs/area/`
 
-### There is no `gh-pages` branch to select for GitHub Pages
+**Beschreibung:** Eine Werteliste, um einer Ressource den adressierten Leistungsbereich der Hochschule zuzuordnen.
+**Erstellt von:** Justus Henke
+**Erstellungsdatum:** 2024-05-21
+**Lizenz:** [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
-You probably only forked the main branch.
-You have two options:
+### Werte-Labels:
+- **General (bereichsübergreifend)**: Die Ressource ist nicht auf einen bestimmten Leistungsbereich der Hochschule beschränkt.
+- **Teaching/Studies (Lehre/Studium)**: Die Ressource richtet sich insbesondere an den Leistungsbereich Lehre und Studium.
+- **Research (Forschung)**: Die Ressource richtet sich insbesondere an den Leistungsbereich Forschung.
+- **Transfer/Third Mission (Transfer/Third Mission)**: Die Ressource richtet sich insbesondere an den Leistungsbereich Transfer/Third Mission.
 
-- Delete the repo and fork it again, but make sure to uncheck the box to only fork the main branch
-- Make sure the GitHub Action is activated ➡️ Go to "Actions" tab and activate it. After that commit changes to a vocabulary in the main branch. This should trigger the build and create a `gh-pages` branch.
+## Nutzung
 
-### I push changes, but they seem to have no effect. My vocabulary stays the same
+Um diese Vokabulare zu nutzen, können Sie die Turtle-Dateien in Ihr eigenes RDF-Datenmodell importieren und die definierten Konzepte zur Annotation und Klassifikation Ihrer Ressourcen verwenden.
 
-Maybe your GitHub Action is not activated yet.
-Go to the "Actions" tab and activate GitHub Actions for your repository.
+## Kontakt
 
-### During the build I get an error saying `The requested URL returned error: 403`
+Für Fragen oder Anmerkungen zu diesen Vokabularen wenden Sie sich bitte an:
 
-You maybe need to update permissions like described here: https://github.com/peaceiris/actions-gh-pages/issues/744
-Go to `Settings` > `Actions` > `General` > `Workflow permissions` and toggle the Read and write permissions.
-
-## CHANGELOG
-
-09.02.2021:
-
-- In an earlier version, there was the .env variable `PATH_PREFIX` set to point to the repository the vocabulary is hosted at. To align with rest of code, this was changed to `BASEURL`.
-- The docker image now also support i18n
-
+**Justus Henke** opendata@hof.uni-halle.de

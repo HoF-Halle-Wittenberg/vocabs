@@ -1,6 +1,7 @@
 # Vokabulare für organisatorische Kontexte und Inhaltstypen
 
 Dieses Repository enthält verschiedene Vokabulare zur Beschreibung von Ressourcen im Hochschulkontext. Die Vokabulare sind in Turtle-Syntax definiert und umfassen Wertelisten für organisatorische Kontexte, Inhaltstypen und Leistungsbereiche der Hochschule.
+Die Wertelisten sind hier als HTML einsehbar: https://hof-halle-wittenberg.github.io/vocabs/
 
 ## Organisational Context
 
@@ -57,7 +58,7 @@ Dieses Repository enthält verschiedene Vokabulare zur Beschreibung von Ressourc
 
 ## Nutzung
 
-Um diese Vokabulare zu nutzen, können Sie die Turtle-Dateien in Ihr eigenes RDF-Datenmodell importieren und die definierten Konzepte zur Annotation und Klassifikation Ihrer Ressourcen verwenden.
+Um diese Vokabulare zu nutzen, können Sie die Turtle-Dateien in Ihr eigenes RDF-Datenmodell importieren und die definierten Konzepte zur Annotation und Klassifikation Ihrer Ressourcen verwenden. Sie können auch die JSON Daten des Vokabulars abrufen, z.B. https://hof-halle-wittenberg.github.io/vocabs/area/index.json Ändern Sie einfach den Namen der Werteliste
 
 ## Kontakt
 

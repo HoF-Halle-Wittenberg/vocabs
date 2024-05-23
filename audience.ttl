@@ -1,0 +1,135 @@
+@prefix audience: <https://hof-halle-wittenberg.github.io/vocabs/audience/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+audience: a skos:ConceptScheme ;
+    dct:title "Zielgruppe"@de ;
+    dct:description "Eine Werteliste zur Zuordnung der Zielgruppe einer Ressource."@de ;
+    dct:creator "Justus Henke"@de ;
+    dct:created "2024-05-21"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept audience:Audience .
+
+audience:Audience a skos:Concept ;
+    skos:prefLabel "Zielgruppe"@de, "Audience"@en;
+    skos:definition "Eine Liste von Zielgruppen, die einer Ressource zugeordnet werden können."@de, "A list of audiences that can be assigned to a resource."@en ;
+    skos:topConceptOf audience: .
+
+# Erste Ebene der Zielgruppen
+audience:Administrator a skos:Concept ;
+    skos:prefLabel "Verwaltung"@de, "Administration"@en ;
+    skos:definition "Personen, die administrative Aufgaben an der Hochschule ausüben."@de, "Individuals responsible for administrative tasks at the university."@en ;
+    skos:broader audience:Audience .
+
+audience:Public a skos:Concept ;
+    skos:prefLabel "Allgemeine Öffentlichkeit"@de, "General Public"@en ;
+    skos:definition "Menschen außerhalb der Hochschule, die an den Aktivitäten der Hochschule interessiert sind."@de, "People outside the university who are interested in the activities of the university."@en ;
+    skos:broader audience:Audience .
+
+audience:Mentor a skos:Concept ;
+    skos:prefLabel "Mentor:in"@de, "Mentor"@en ;
+    skos:definition "Erfahrene Personen, die andere in ihrer beruflichen oder akademischen Entwicklung unterstützen."@de, "Experienced individuals who support others in their professional or academic development."@en ;
+    skos:broader audience:Audience .
+
+audience:Parent a skos:Concept ;
+    skos:prefLabel "Eltern"@de, "Parents"@en ;
+    skos:definition "Eltern von Studierenden oder anderen Hochschulangehörigen."@de, "Parents of students or other members of the university community."@en ;
+    skos:broader audience:Audience .
+
+audience:PeerTutor a skos:Concept ;
+    skos:prefLabel "Peer-Tutor:in"@de, "Peer Tutor"@en ;
+    skos:definition "Studierende oder Mitarbeiter:innen, die anderen Studierenden bei ihrem Lernprozess helfen."@de, "Students or staff who assist other students in their learning process."@en ;
+    skos:broader audience:Audience .
+
+audience:Professional a skos:Concept ;
+    skos:prefLabel "Fachkraft"@de, "Professional"@en ;
+    skos:definition "Personen mit spezifischem Fachwissen oder Fähigkeiten, die in einem bestimmten Bereich arbeiten."@de, "Individuals with specific expertise or skills working in a particular field."@en ;
+    skos:broader audience:Audience .
+
+audience:Learner a skos:Concept ;
+    skos:prefLabel "Lernende"@de, "Learner"@en ;
+    skos:definition "Personen, die sich in einem Lernprozess befinden und neues Wissen oder Fähigkeiten erwerben."@de, "Individuals engaged in a learning process, acquiring new knowledge or skills."@en ;
+    skos:broader audience:Audience .
+
+# Zweite Ebene der Zielgruppen
+audience:ScientificStaff a skos:Concept ;
+    skos:prefLabel "Wissenschaftliche Mitarbeiter:innen"@de, "Scientific Staff"@en ;
+    skos:definition "Personen, die an Forschungsprojekten beteiligt sind oder wissenschaftliche Tätigkeiten ausüben."@de, "Individuals involved in research projects or scientific activities."@en ;
+    skos:broader audience:Administrator .
+
+audience:Professors a skos:Concept ;
+    skos:prefLabel "Professor:innen"@de, "Professors"@en ;
+    skos:definition "Erfahrene Hochschullehrer:innen mit fortgeschrittenem akademischen Rang."@de, "Experienced university teachers with advanced academic rank."@en ;
+    skos:broader audience:Administrator .
+
+audience:NewProfessors a skos:Concept ;
+    skos:prefLabel "Neuberufene Professor:innen"@de, "Newly Appointed Professors"@en ;
+    skos:definition "Hochschullehrer:innen, die kürzlich eine Professur angetreten haben."@de, "University professors who have recently been appointed."@en ;
+    skos:broader audience:Administrator .
+
+audience:TechnicalStaff a skos:Concept ;
+    skos:prefLabel "Technisches & Verwaltungspersonal"@de, "Technical & Administrative Staff"@en ;
+    skos:definition "Mitarbeiter:innen, die technische und administrative Aufgaben an der Hochschule erledigen."@de, "Staff members responsible for technical and administrative tasks at the university."@en ;
+    skos:broader audience:Administrator .
+
+audience:LegalStaff a skos:Concept ;
+    skos:prefLabel "Rechtsabteilung/Justiziariat"@de, "Legal Department"@en ;
+    skos:definition "Juristisches Personal, das für rechtliche Angelegenheiten an der Hochschule zuständig ist."@de, "Legal personnel responsible for legal matters at the university."@en ;
+    skos:broader audience:Administrator .
+
+audience:Leadership a skos:Concept ;
+    skos:prefLabel "Leitungsebene Hochschule/Fakultät/Fachbereich"@de, "University/Faculty/Departmental Leadership"@en ;
+    skos:definition "Personen in leitenden Positionen auf Hochschul-, Fakultäts- oder Fachbereichsebene."@de, "Individuals in leadership positions at the university, faculty, or department level."@en ;
+    skos:broader audience:Administrator .
+
+audience:CIO a skos:Concept ;
+    skos:prefLabel "Chief Information Officer"@de, "Chief Information Officer"@en ;
+    skos:definition "Personen, die für die Informationstechnologie und die digitalen Ressourcen der Hochschule verantwortlich sind."@de, "Individuals responsible for the information technology and digital resources of the university."@en ;
+skos:broader audience:Administrator .
+
+audience:ProgramDirector a skos:Concept ;
+    skos:prefLabel "Studiengangsverantwortliche"@de, "Program Directors"@en ;
+    skos:definition "Personen, die für die Leitung und Organisation eines Studiengangs an der Hochschule verantwortlich sind."@de, "Individuals responsible for the management and organization of a study program at the university."@en ;
+    skos:broader audience:Administrator .
+
+audience:ITCommittee a skos:Concept ;
+    skos:prefLabel "IT-Ausschuss/-Kommission"@de, "IT Committee/Commission"@en ;
+    skos:definition "Gremium, das für die strategische Ausrichtung und Entwicklung der IT-Infrastruktur an der Hochschule zuständig ist."@de, "Committee responsible for the strategic direction and development of the IT infrastructure at the university."@en ;
+    skos:broader audience:Administrator .
+
+audience:ExternalStakeholder a skos:Concept ;
+    skos:prefLabel "Außerhochschulische Akteur:innen"@de, "External Stakeholders"@en ;
+    skos:definition "Personen oder Organisationen außerhalb der Hochschule, die an den Aktivitäten der Hochschule beteiligt sind."@de, "Individuals or organizations outside the university who are involved in the activities of the university."@en ;
+    skos:broader audience:Public .
+
+audience:ITServices a skos:Concept ;
+    skos:prefLabel "Rechenzentrum/IT-Services"@de, "Data Center/IT Services"@en ;
+    skos:definition "Einrichtung oder Abteilung, die für die Bereitstellung und den Betrieb der IT-Infrastruktur an der Hochschule verantwortlich ist."@de, "Facility or department responsible for the provision and operation of the IT infrastructure at the university."@en ;
+    skos:broader audience:Professional .
+
+audience:Library a skos:Concept ;
+    skos:prefLabel "Hochschulbibliothek"@de, "University Library"@en ;
+    skos:definition "Einrichtung, die Informationen und Ressourcen für Studium, Lehre und Forschung bereitstellt."@de, "Institution providing information and resources for study, teaching, and research."@en ;
+    skos:broader audience:Professional .
+
+audience:StudyAdvising a skos:Concept ;
+    skos:prefLabel "Studienberatung/Studierendenservice"@de, "Study Advising/Student Services"@en ;
+    skos:definition "Abteilung oder Serviceeinrichtung, die Studierenden bei Fragen rund um das Studium unterstützt."@de, "Department or service facility that supports students with questions about their studies."@en ;
+    skos:broader audience:Professional .
+
+audience:QualityManagement a skos:Concept ;
+    skos:prefLabel "Qualitätsmanagement"@de, "Quality Management"@en ;
+    skos:definition "Verantwortliche Personen oder Einrichtungen, die für die Sicherung und Weiterentwicklung der Qualität von Lehre und Studium an der Hochschule zuständig sind."@de, "Individuals or institutions responsible for ensuring and enhancing the quality of teaching and studies at the university."@en ;
+    skos:broader audience:Professional .
+
+audience:Didactics a skos:Concept ;
+    skos:prefLabel "Hochschuldidaktik"@de, "University Didactics"@en ;
+    skos:definition "Personen oder Einrichtungen, die Lehrkräfte in ihren didaktischen Fähigkeiten unterstützen und weiterbilden."@de, "Individuals or institutions that support and train teachers in their didactic skills."@en ;
+    skos:broader audience:Professional .
+
+audience:TeacherSupport a skos:Concept ;
+    skos:prefLabel "Lehrendensupport/-Beratung"@de, "Teacher Support/Consulting"@en ;
+    skos:definition "Personen oder Einrichtungen, die Lehrkräfte bei Fragen zur Lehre und Didaktik beraten und unterstützen."@de, "Individuals or institutions that advise and support teachers on teaching and didactics."@en ;
+    skos:broader audience:Professional .
+   

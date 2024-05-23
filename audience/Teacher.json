@@ -2,8 +2,8 @@
   "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/Teacher",
   "type": "Concept",
   "prefLabel": {
-    "en": "Learner",
-    "de": "Lernende"
+    "en": "Teacher",
+    "de": "Lehrperson"
   },
   "definition": {
     "en": "A person who has been trained to implement pedagogical methods and practices.",

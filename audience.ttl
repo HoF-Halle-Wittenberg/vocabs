@@ -2,54 +2,58 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lrmi: <https://vocabs.edu-sharing.net/w3id.org/edu-sharing/vocabs/dublin/educationalAudienceRole/> .
+
 
 audience: a skos:ConceptScheme ;
     dct:title "Zielgruppe"@de ;
-    dct:description "Eine Werteliste zur Zuordnung der Zielgruppe einer Ressource."@de ;
+    dct:description "Eine Liste von Zielgruppen, die einer Ressource zugeordnet werden können."@de, "A list of audiences that can be assigned to a resource."@en ;
     dct:creator "Justus Henke"@de ;
     dct:created "2024-05-21"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     skos:hasTopConcept audience:Audience .
 
-audience:Audience a skos:Concept ;
-    skos:prefLabel "Zielgruppe"@de, "Audience"@en;
-    skos:definition "Eine Liste von Zielgruppen, die einer Ressource zugeordnet werden können."@de, "A list of audiences that can be assigned to a resource."@en ;
-    skos:topConceptOf audience: .
-
 # Erste Ebene der Zielgruppen
 audience:Administrator a skos:Concept ;
     skos:prefLabel "Verwaltung"@de, "Administration"@en ;
     skos:definition "Personen, die administrative Aufgaben an der Hochschule ausüben."@de, "Individuals responsible for administrative tasks at the university."@en ;
+    skos:exactMatch lrmi:administrator ;
     skos:broader audience:Audience .
 
 audience:Public a skos:Concept ;
     skos:prefLabel "Allgemeine Öffentlichkeit"@de, "General Public"@en ;
     skos:definition "Menschen außerhalb der Hochschule, die an den Aktivitäten der Hochschule interessiert sind."@de, "People outside the university who are interested in the activities of the university."@en ;
+    skos:exactMatch lrmi:generalPublic ;
     skos:broader audience:Audience .
 
 audience:Mentor a skos:Concept ;
     skos:prefLabel "Mentor:in"@de, "Mentor"@en ;
     skos:definition "Erfahrene Personen, die andere in ihrer beruflichen oder akademischen Entwicklung unterstützen."@de, "Experienced individuals who support others in their professional or academic development."@en ;
+    skos:exactMatch lrmi:mentor ;
     skos:broader audience:Audience .
 
 audience:Parent a skos:Concept ;
     skos:prefLabel "Eltern"@de, "Parents"@en ;
     skos:definition "Eltern von Studierenden oder anderen Hochschulangehörigen."@de, "Parents of students or other members of the university community."@en ;
+    skos:exactMatch lrmi:parent ;
     skos:broader audience:Audience .
 
 audience:PeerTutor a skos:Concept ;
     skos:prefLabel "Peer-Tutor:in"@de, "Peer Tutor"@en ;
     skos:definition "Studierende oder Mitarbeiter:innen, die anderen Studierenden bei ihrem Lernprozess helfen."@de, "Students or staff who assist other students in their learning process."@en ;
+    skos:exactMatch lrmi:peerTutor ;
     skos:broader audience:Audience .
 
 audience:Professional a skos:Concept ;
     skos:prefLabel "Fachkraft"@de, "Professional"@en ;
     skos:definition "Personen mit spezifischem Fachwissen oder Fähigkeiten, die in einem bestimmten Bereich arbeiten."@de, "Individuals with specific expertise or skills working in a particular field."@en ;
+    skos:exactMatch lrmi:professional ;
     skos:broader audience:Audience .
 
 audience:Learner a skos:Concept ;
     skos:prefLabel "Lernende"@de, "Learner"@en ;
     skos:definition "Personen, die sich in einem Lernprozess befinden und neues Wissen oder Fähigkeiten erwerben."@de, "Individuals engaged in a learning process, acquiring new knowledge or skills."@en ;
+    skos:exactMatch lrmi:student ;
     skos:broader audience:Audience .
 
 # Zweite Ebene der Zielgruppen

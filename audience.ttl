@@ -11,66 +11,73 @@ audience: a skos:ConceptScheme ;
     dct:creator "Justus Henke"@de ;
     dct:created "2024-05-21"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept audience:Audience .
+    skos:hasTopConcept audience:Administrator, audience:Public, audience:Mentor, audience:Parent, audience:PeerTutor, audience:Professional, audience:Learner, audience:Teacher .
 
 # Erste Ebene der Zielgruppen
 audience:Administrator a skos:Concept ;
     skos:prefLabel "Verwaltung"@de, "Administration"@en ;
     skos:definition "Personen, die administrative Aufgaben an der Hochschule ausüben."@de, "Individuals responsible for administrative tasks at the university."@en ;
     skos:exactMatch lrmi:administrator ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
 
 audience:Public a skos:Concept ;
     skos:prefLabel "Allgemeine Öffentlichkeit"@de, "General Public"@en ;
     skos:definition "Menschen außerhalb der Hochschule, die an den Aktivitäten der Hochschule interessiert sind."@de, "People outside the university who are interested in the activities of the university."@en ;
     skos:exactMatch lrmi:generalPublic ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
 
 audience:Mentor a skos:Concept ;
     skos:prefLabel "Mentor:in"@de, "Mentor"@en ;
     skos:definition "Erfahrene Personen, die andere in ihrer beruflichen oder akademischen Entwicklung unterstützen."@de, "Experienced individuals who support others in their professional or academic development."@en ;
     skos:exactMatch lrmi:mentor ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
 
 audience:Parent a skos:Concept ;
     skos:prefLabel "Eltern"@de, "Parents"@en ;
     skos:definition "Eltern von Studierenden oder anderen Hochschulangehörigen."@de, "Parents of students or other members of the university community."@en ;
     skos:exactMatch lrmi:parent ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
 
 audience:PeerTutor a skos:Concept ;
     skos:prefLabel "Peer-Tutor:in"@de, "Peer Tutor"@en ;
     skos:definition "Studierende oder Mitarbeiter:innen, die anderen Studierenden bei ihrem Lernprozess helfen."@de, "Students or staff who assist other students in their learning process."@en ;
     skos:exactMatch lrmi:peerTutor ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
 
 audience:Professional a skos:Concept ;
     skos:prefLabel "Fachkraft"@de, "Professional"@en ;
     skos:definition "Personen mit spezifischem Fachwissen oder Fähigkeiten, die in einem bestimmten Bereich arbeiten."@de, "Individuals with specific expertise or skills working in a particular field."@en ;
     skos:exactMatch lrmi:professional ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
 
 audience:Learner a skos:Concept ;
     skos:prefLabel "Lernende"@de, "Learner"@en ;
     skos:definition "Personen, die sich in einem Lernprozess befinden und neues Wissen oder Fähigkeiten erwerben."@de, "Individuals engaged in a learning process, acquiring new knowledge or skills."@en ;
     skos:exactMatch lrmi:student ;
-    skos:broader audience:Audience .
+    skos:topConceptOf audience: .
+
+audience:Teacher a skos:Concept ;
+    skos:prefLabel "Lernende"@de, "Learner"@en ;
+    skos:definition "Eine Person, die ausgebildet wurde, pädagogische Methoden und Praktiken umzusetzen."@de, "A person who has been trained to implement pedagogical methods and practices."@en ;
+    skos:exactMatch lrmi:teacher ;
+    skos:topConceptOf audience: .
+
 
 # Zweite Ebene der Zielgruppen
 audience:ScientificStaff a skos:Concept ;
     skos:prefLabel "Wissenschaftliche Mitarbeiter:innen"@de, "Scientific Staff"@en ;
     skos:definition "Personen, die an Forschungsprojekten beteiligt sind oder wissenschaftliche Tätigkeiten ausüben."@de, "Individuals involved in research projects or scientific activities."@en ;
-    skos:broader audience:Administrator .
+    skos:broader audience:Teacher .
 
 audience:Professors a skos:Concept ;
     skos:prefLabel "Professor:innen"@de, "Professors"@en ;
     skos:definition "Erfahrene Hochschullehrer:innen mit fortgeschrittenem akademischen Rang."@de, "Experienced university teachers with advanced academic rank."@en ;
-    skos:broader audience:Administrator .
+    skos:broader audience:Teacher .
 
 audience:NewProfessors a skos:Concept ;
     skos:prefLabel "Neuberufene Professor:innen"@de, "Newly Appointed Professors"@en ;
     skos:definition "Hochschullehrer:innen, die kürzlich eine Professur angetreten haben."@de, "University professors who have recently been appointed."@en ;
-    skos:broader audience:Administrator .
+    skos:broader audience:Teacher .
 
 audience:TechnicalStaff a skos:Concept ;
     skos:prefLabel "Technisches & Verwaltungspersonal"@de, "Technical & Administrative Staff"@en ;

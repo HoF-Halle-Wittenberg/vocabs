@@ -1,33 +1,234 @@
-@prefix orgContext: <https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/> .
+@prefix didacticUseCase: <https://hof-halle-wittenberg.github.io/vocabs/didacticUseCase/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix sdo: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-orgContext: a skos:ConceptScheme ;
-    dct:title "Organisational Context"@en, "Organisationaler Kontext"@de ;
-    dct:description "Eine Werteliste um einer Ressource den organisatorischen Kontext zuzuordnen."@de, "A value list to assign the organizational context to a resource."@en ;
+didacticUseCase: a skos:ConceptScheme ;
+    dct:title "Didactic Use Case"@en, "Didaktischer Anwendungsfall"@de ;
+    dct:description "Eine Werteliste, um einer Ressource den didaktischen Anwendungsfall zuzuordnen."@de, "A value list to assign the didactic use case to a resource."@en ;
     dct:creator "Justus Henke"@de ;
     dct:created "2024-05-21"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept orgContext:DidacticSupport, orgContext:LegalSupport, orgContext:InfrastructureSupport, orgContext:StrategicSupport .
+    skos:hasTopConcept didacticUseCase:TeachingMethods, didacticUseCase:Competences, didacticUseCase:LearningProcesses, didacticUseCase:MotivationInteraction, didacticUseCase:TeachingCompetences, didacticUseCase:SpecificEducationalGoals .
 
-orgContext:DidacticSupport a skos:Concept ;
-    skos:prefLabel "didaktischer Support"@de, "didactic support"@en ;
-    skos:definition "Die Ressource bietet Unterstützung im Bereich der Didaktik."@de, "The resource provides support in the area of didactics."@en ;
-    skos:topConceptOf orgContext: .
+didacticUseCase:TeachingMethods a skos:Concept ;
+    skos:prefLabel "Didaktische Methoden und Lehrformen"@de, "Didactic Methods and Teaching Forms"@en ;
+    skos:definition "Verschiedene Methoden und Lehrformen, die im didaktischen Kontext verwendet werden."@de, "Various methods and teaching forms used in the didactic context."@en ;
+    skos:topConceptOf didacticUseCase: ;
+    skos:narrower didacticUseCase:BlendedLearning, didacticUseCase:GroupWork, didacticUseCase:ProblemBasedLearning, didacticUseCase:SelfDirectedLearning, didacticUseCase:ServiceLearning, didacticUseCase:TeamLearning .
 
-orgContext:LegalSupport a skos:Concept ;
-    skos:prefLabel "rechtlicher Support"@de, "legal support"@en ;
-    skos:definition "Die Ressource bietet Unterstützung im Bereich der rechtlichen Fragen."@de, "The resource provides support in the area of legal matters."@en ;
-    skos:topConceptOf orgContext: .
+didacticUseCase:BlendedLearning a skos:Concept ;
+    skos:prefLabel "Blended Learning"@de, "Blended Learning"@en ;
+    skos:broader didacticUseCase:TeachingMethods ;
+    skos:inScheme didacticUseCase: .
 
-orgContext:InfrastructureSupport a skos:Concept ;
-    skos:prefLabel "Support Infrastruktur"@de, "infrastructure support"@en ;
-    skos:definition "Die Ressource bietet Unterstützung im Bereich der Infrastruktur."@de, "The resource provides support in the area of infrastructure."@en ;
-    skos:topConceptOf orgContext: .
+didacticUseCase:GroupWork a skos:Concept ;
+    skos:prefLabel "Gruppenarbeit"@de, "Group Work"@en ;
+    skos:broader didacticUseCase:TeachingMethods ;
+    skos:inScheme didacticUseCase: .
 
-orgContext:StrategicSupport a skos:Concept ;
-    skos:prefLabel "strategischer Support"@de, "strategic support"@en ;
-    skos:definition "Die Ressource bietet Unterstützung im Bereich der strategischen Planung."@de, "The resource provides support in the area of strategic planning."@en ;
-    skos:topConceptOf orgContext: .
+didacticUseCase:ProblemBasedLearning a skos:Concept ;
+    skos:prefLabel "Problembasiertes Lernen"@de, "Problem-Based Learning"@en ;
+    skos:broader didacticUseCase:TeachingMethods ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:SelfDirectedLearning a skos:Concept ;
+    skos:prefLabel "Selbstgesteuertes Lernen"@de, "Self-Directed Learning"@en ;
+    skos:broader didacticUseCase:TeachingMethods ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:ServiceLearning a skos:Concept ;
+    skos:prefLabel "Service Learning"@de, "Service Learning"@en ;
+    skos:broader didacticUseCase:TeachingMethods ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:TeamLearning a skos:Concept ;
+    skos:prefLabel "Teamlearning"@de, "Team Learning"@en ;
+    skos:broader didacticUseCase:TeachingMethods ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Competences a skos:Concept ;
+    skos:prefLabel "Kompetenzen und Fähigkeiten"@de, "Competences and Skills"@en ;
+    skos:definition "Verschiedene Kompetenzen und Fähigkeiten, die im Lernprozess entwickelt werden."@de, "Various competences and skills developed in the learning process."@en ;
+    skos:topConceptOf didacticUseCase: ;
+    skos:narrower didacticUseCase:SubjectCompetences, didacticUseCase:FutureSkills, didacticUseCase:MethodicalCompetences, didacticUseCase:KeyCompetences, didacticUseCase:TransferCompetences, didacticUseCase:SocialCompetences, didacticUseCase:CriticalThinking .
+
+didacticUseCase:SubjectCompetences a skos:Concept ;
+    skos:prefLabel "Fachkompetenzen"@de, "Subject Competences"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:FutureSkills a skos:Concept ;
+    skos:prefLabel "Future Skills"@de, "Future Skills"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:MethodicalCompetences a skos:Concept ;
+    skos:prefLabel "Methodische Kompetenzen"@de, "Methodical Competences"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:KeyCompetences a skos:Concept ;
+    skos:prefLabel "Schlüsselkompetenzen"@de, "Key Competences"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:TransferCompetences a skos:Concept ;
+    skos:prefLabel "Transferkompetenzen"@de, "Transfer Competences"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:SocialCompetences a skos:Concept ;
+    skos:prefLabel "Soziale Kompetenzen"@de, "Social Competences"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:CriticalThinking a skos:Concept ;
+    skos:prefLabel "Kritisches Denken"@de, "Critical Thinking"@en ;
+    skos:broader didacticUseCase:Competences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:LearningProcesses a skos:Concept ;
+    skos:prefLabel "Lern- und Lehrprozesse"@de, "Learning and Teaching Processes"@en ;
+    skos:definition "Verschiedene Prozesse, die beim Lernen und Lehren eine Rolle spielen."@de, "Various processes involved in learning and teaching."@en ;
+    skos:topConceptOf didacticUseCase: ;
+    skos:narrower didacticUseCase:Attention, didacticUseCase:Feedback, didacticUseCase:LearningResearch, didacticUseCase:LearningAtmosphere, didacticUseCase:LearningSuccess, didacticUseCase:LearningPhaseDesign, didacticUseCase:Orientation, didacticUseCase:Metacommunication, didacticUseCase:Transparency .
+
+didacticUseCase:Attention a skos:Concept ;
+    skos:prefLabel "Aufmerksamkeit"@de, "Attention"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Feedback a skos:Concept ;
+    skos:prefLabel "Feedback"@de, "Feedback"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:LearningResearch a skos:Concept ;
+    skos:prefLabel "Forschen lernen"@de, "Learning Research"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:LearningAtmosphere a skos:Concept ;
+    skos:prefLabel "Lernatmosphäre"@de, "Learning Atmosphere"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:LearningSuccess a skos:Concept ;
+    skos:prefLabel "Lernerfolg"@de, "Learning Success"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:LearningPhaseDesign a skos:Concept ;
+    skos:prefLabel "Lernphasengestaltung"@de, "Learning Phase Design"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Orientation a skos:Concept ;
+    skos:prefLabel "Orientierung"@de, "Orientation"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Metacommunication a skos:Concept ;
+    skos:prefLabel "Metakommunikation"@de, "Metacommunication"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Transparency a skos:Concept ;
+    skos:prefLabel "Transparenz"@de, "Transparency"@en ;
+    skos:broader didacticUseCase:LearningProcesses ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:MotivationInteraction a skos:Concept ;
+    skos:prefLabel "Motivation und Interaktion"@de, "Motivation and Interaction"@en ;
+    skos:definition "Aspekte der Motivation und Interaktion im Lernprozess."@de, "Aspects of motivation and interaction in the learning process."@en ;
+    skos:topConceptOf didacticUseCase: ;
+    skos:narrower didacticUseCase:JoyOfLearning, didacticUseCase:InterestMotivation, didacticUseCase:Interaction, didacticUseCase:Interdisciplinarity, didacticUseCase:StudentParticipation, didacticUseCase:PeerRelationship .
+
+didacticUseCase:JoyOfLearning a skos:Concept ;
+    skos:prefLabel "Freude am Lernen"@de, "Joy of Learning"@en ;
+    skos:broader didacticUseCase:MotivationInteraction ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:InterestMotivation a skos:Concept ;
+    skos:prefLabel "Interesse / Motivation"@de, "Interest / Motivation"@en ;
+    skos:broader didacticUseCase:MotivationInteraction ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Interaction a skos:Concept ;
+    skos:prefLabel "Interaktion"@de, "Interaction"@en ;
+    skos:broader didacticUseCase:MotivationInteraction ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Interdisciplinarity a skos:Concept ;
+    skos:prefLabel "Interdisziplinarität"@de, "Interdisciplinarity"@en ;
+    skos:broader didacticUseCase:MotivationInteraction ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:StudentParticipation a skos:Concept ;
+    skos:prefLabel "studentische Partizipation"@de, "Student Participation"@en ;
+    skos:broader didacticUseCase:MotivationInteraction ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:PeerRelationship a skos:Concept ;
+    skos:prefLabel "Peer-Beziehung"@de, "Peer Relationship"@en ;
+    skos:broader didacticUseCase:MotivationInteraction ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:TeachingCompetences a skos:Concept ;
+    skos:prefLabel "Lehrkompetenzen und -entwicklung"@de, "Teaching Competences and Development"@en ;
+    skos:definition "Entwicklung und Verbesserung der Lehrkompetenzen."@de, "Development and improvement of teaching competences."@en ;
+    skos:topConceptOf didacticUseCase: ;
+    skos:narrower didacticUseCase:TeachingCompetenceDevelopment, didacticUseCase:Communication, didacticUseCase:ConflictPrevention .
+
+didacticUseCase:TeachingCompetenceDevelopment a skos:Concept ;
+    skos:prefLabel "Lehrkompetenzentwicklung"@de, "Teaching Competence Development"@en ;
+    skos:broader didacticUseCase:TeachingCompetences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Communication a skos:Concept ;
+    skos:prefLabel "Kommunikation"@de, "Communication"@en ;
+    skos:broader didacticUseCase:TeachingCompetences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:ConflictPrevention a skos:Concept ;
+    skos:prefLabel "Konfliktprävention"@de, "Conflict Prevention"@en ;
+    skos:broader didacticUseCase:TeachingCompetences ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:SpecificEducationalGoals a skos:Concept ;
+    skos:prefLabel "Spezifische Bildungsziele"@de, "Specific Educational Goals"@en ;
+    skos:definition "Besondere Ziele, die im Bildungsprozess erreicht werden sollen."@de, "Specific goals to be achieved in the educational process."@en ;
+    skos:topConceptOf didacticUseCase: ;
+    skos:narrower didacticUseCase:BestSupport, didacticUseCase:ThesisCandidates, didacticUseCase:PotentialDevelopment, didacticUseCase:PracticalProfessionalReference, didacticUseCase:ResourceOrientation, didacticUseCase:Examination .
+
+didacticUseCase:BestSupport a skos:Concept ;
+    skos:prefLabel "Bestenförderung"@de, "Best Support"@en ;
+    skos:broader didacticUseCase:SpecificEducationalGoals ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:ThesisCandidates a skos:Concept ;
+    skos:prefLabel "Kandidaten für Abschlussarbeiten"@de, "Thesis Candidates"@en ;
+    skos:broader didacticUseCase:SpecificEducationalGoals ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:PotentialDevelopment a skos:Concept ;
+    skos:prefLabel "Potenzialentwicklung"@de, "Potential Development"@en ;
+    skos:broader didacticUseCase:SpecificEducationalGoals ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:PracticalProfessionalReference a skos:Concept ;
+    skos:prefLabel "Praxis/Berufsbezug"@de, "Practical/Professional Reference"@en ;
+    skos:broader didacticUseCase:SpecificEducationalGoals ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:ResourceOrientation a skos:Concept ;
+    skos:prefLabel "Ressourcenorientierung"@de, "Resource Orientation"@en ;
+    skos:broader didacticUseCase:SpecificEducationalGoals ;
+    skos:inScheme didacticUseCase: .
+
+didacticUseCase:Examination a skos:Concept ;
+    skos:prefLabel "Prüfen"@de, "Examination"@en ;
+    skos:broader didacticUseCase:SpecificEducationalGoals ;
+    skos:inScheme didacticUseCase: .

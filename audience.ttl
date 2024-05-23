@@ -57,7 +57,7 @@ audience:Learner a skos:Concept ;
     skos:topConceptOf audience: .
 
 audience:Teacher a skos:Concept ;
-    skos:prefLabel "Lernende"@de, "Learner"@en ;
+    skos:prefLabel "Lehrperson"@de, "Teacher"@en ;
     skos:definition "Eine Person, die ausgebildet wurde, pädagogische Methoden und Praktiken umzusetzen."@de, "A person who has been trained to implement pedagogical methods and practices."@en ;
     skos:exactMatch lrmi:teacher ;
     skos:topConceptOf audience: .

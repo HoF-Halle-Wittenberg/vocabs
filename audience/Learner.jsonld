@@ -2,13 +2,36 @@
   "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/Learner",
   "type": "Concept",
   "prefLabel": {
-    "en": "Learner",
-    "de": "Lernende"
+    "en": "Student",
+    "de": "Student:in"
   },
   "definition": {
     "en": "Individuals engaged in a learning process, acquiring new knowledge or skills.",
     "de": "Personen, die sich in einem Lernprozess befinden und neues Wissen oder Fähigkeiten erwerben."
   },
+  "narrower": [
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/FirstYearStudents",
+      "prefLabel": {
+        "en": "First-Year Students",
+        "de": "Studienanfänger:innen"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/AdvancedStudents",
+      "prefLabel": {
+        "en": "Advanced Students",
+        "de": "Fortgeschrittene Studierende"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/DoctoralStudents",
+      "prefLabel": {
+        "en": "Doctoral Students",
+        "de": "Doktoranden"
+      }
+    }
+  ],
   "exactMatch": [
     {
       "id": "https://vocabs.edu-sharing.net/w3id.org/edu-sharing/vocabs/dublin/educationalAudienceRole/student"

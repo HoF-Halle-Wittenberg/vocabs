@@ -51,7 +51,7 @@ audience:Professional a skos:Concept ;
     skos:topConceptOf audience: .
 
 audience:Learner a skos:Concept ;
-    skos:prefLabel "Lernende"@de, "Learner"@en ;
+    skos:prefLabel "Student:in"@de, "Student"@en ;
     skos:definition "Personen, die sich in einem Lernprozess befinden und neues Wissen oder Fähigkeiten erwerben."@de, "Individuals engaged in a learning process, acquiring new knowledge or skills."@en ;
     skos:exactMatch lrmi:student ;
     skos:topConceptOf audience: .
@@ -64,8 +64,24 @@ audience:Teacher a skos:Concept ;
 
 
 # Zweite Ebene der Zielgruppen
+
+audience:FirstYearStudents a skos:Concept ;
+    skos:prefLabel "Studienanfänger:innen"@de, "First-Year Students"@en ;
+    skos:definition "Studierende im ersten Jahr ihres Studiums."@de, "Students in their first year of study."@en ;
+    skos:broader audience:Learner .
+
+audience:AdvancedStudents a skos:Concept ;
+    skos:prefLabel "Fortgeschrittene Studierende"@de, "Advanced Students"@en ;
+    skos:definition "Studierende, die sich in höheren Semestern ihres Studiums befinden."@de, "Students in higher semesters of their studies."@en ;
+    skos:broader audience:Learner .
+
+audience:DoctoralStudents a skos:Concept ;
+    skos:prefLabel "Doktoranden"@de, "Doctoral Students"@en ;
+    skos:definition "Studierende, die an ihrer Promotion arbeiten."@de, "Students working on their doctoral degree."@en ;
+    skos:broader audience:Learner .
+
 audience:ScientificStaff a skos:Concept ;
-    skos:prefLabel "Wissenschaftliche Mitarbeiter:innen"@de, "Scientific Staff"@en ;
+    skos:prefLabel "Mittelbau"@de, "Scientific Staff"@en ;
     skos:definition "Personen, die an Forschungsprojekten beteiligt sind oder wissenschaftliche Tätigkeiten ausüben."@de, "Individuals involved in research projects or scientific activities."@en ;
     skos:broader audience:Teacher .
 

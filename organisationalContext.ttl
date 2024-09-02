@@ -117,7 +117,7 @@ orgContext:ExaminationAffairs a skos:Concept ;
     skos:inScheme orgContext: .
 
 orgContext:Evaluation a skos:Concept ;
-    skos:prefLabel "Evaluation"@de, "evaluation"@en ;
+    skos:prefLabel "Evaluation und Akkreditierung"@de, "evaluation and accreditation"@en ;
     skos:broader orgContext:StrategicSupport ;
     skos:inScheme orgContext: .
 
@@ -151,8 +151,8 @@ orgContext:Mentoring a skos:Concept ;
     skos:broader orgContext:DidacticSupport ;
     skos:inScheme orgContext: .
 
-orgContext:SupportEvaluation a skos:Concept ;
-    skos:prefLabel "Evaluation"@de, "evaluation"@en ;
+orgContext:TeachingEvaluation a skos:Concept ;
+    skos:prefLabel "Lehrevaluation"@de, "teaching evaluation"@en ;
     skos:broader orgContext:DidacticSupport ;
     skos:inScheme orgContext: .
 

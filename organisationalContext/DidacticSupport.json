@@ -46,13 +46,6 @@
       }
     },
     {
-      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/SupportEvaluation",
-      "prefLabel": {
-        "en": "evaluation",
-        "de": "Evaluation"
-      }
-    },
-    {
       "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/Internationalization",
       "prefLabel": {
         "en": "internationalization",
@@ -64,6 +57,13 @@
       "prefLabel": {
         "en": "incentive development for good teaching",
         "de": "Entwicklung von Anreizen für gute Lehre"
+      }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/TeachingEvaluation",
+      "prefLabel": {
+        "en": "teaching evaluation",
+        "de": "Lehrevaluation"
       }
     }
   ],

@@ -1,9 +1,9 @@
 {
-  "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/SupportEvaluation",
+  "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/TeachingEvaluation",
   "type": "Concept",
   "prefLabel": {
-    "en": "evaluation",
-    "de": "Evaluation"
+    "en": "teaching evaluation",
+    "de": "Lehrevaluation"
   },
   "broader": {
     "id": "https://hof-halle-wittenberg.github.io/vocabs/organisationalContext/DidacticSupport",

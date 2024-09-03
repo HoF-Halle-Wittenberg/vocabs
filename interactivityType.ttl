@@ -16,7 +16,6 @@ interactivityType: a skos:ConceptScheme ;
         interactivityType:virtualizationDegree,
         interactivityType:synchronicity .
 
-# Aktionsradius (Action Radius)
 interactivityType:actionRadius a skos:Concept ;
     skos:prefLabel "Aktionsradius"@de, "Action Radius"@en ;
     skos:topConceptOf interactivityType: ;
@@ -62,7 +61,6 @@ interactivityType:other a skos:Concept ;
     skos:prefLabel "Sonstiges"@de, "Other"@en ;
     skos:broader interactivityType:actionRadius .
 
-# Zeitdauer (Duration)
 interactivityType:duration a skos:Concept ;
     skos:prefLabel "Zeitdauer"@de, "Duration"@en ;
     skos:topConceptOf interactivityType: ;
@@ -98,7 +96,6 @@ interactivityType:unlimited a skos:Concept ;
     skos:prefLabel "Beliebig/ unbegrenzt"@de, "Arbitrary/ Unlimited"@en ;
     skos:broader interactivityType:duration .
 
-# Gruppengröße (Group Size)
 interactivityType:groupSize a skos:Concept ;
     skos:prefLabel "Gruppengröße"@de, "Group Size"@en ;
     skos:topConceptOf interactivityType: ;
@@ -139,7 +136,6 @@ interactivityType:unlimitedGroup a skos:Concept ;
     skos:prefLabel "Beliebig/ unbegrenzt"@de, "Arbitrary/ Unlimited"@en ;
     skos:broader interactivityType:groupSize .
 
-# Grad der Virtualisierung (Degree of Virtualization)
 interactivityType:virtualizationDegree a skos:Concept ;
     skos:prefLabel "Grad der Virtualisierung"@de, "Degree of Virtualization"@en ;
     skos:topConceptOf interactivityType: ;
@@ -165,7 +161,6 @@ interactivityType:virtualization a skos:Concept ;
     skos:prefLabel "Virtualisierung"@de, "Virtualization"@en ;
     skos:broader interactivityType:virtualizationDegree .
 
-# Synchronizität (Synchronicity)
 interactivityType:synchronicity a skos:Concept ;
     skos:prefLabel "Synchronizität"@de, "Synchronicity"@en ;
     skos:topConceptOf interactivityType: ;

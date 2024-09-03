@@ -1,0 +1,52 @@
+@prefix interactivityType: <https://hof-halle-wittenberg.github.io/vocabs/interactivitytype/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+interactivityType: a skos:ConceptScheme ;
+    dct:title "Aktionsradius"@de, "Interactivity Type"@en ;
+    dct:description "Eine Liste von Interaktionstypen, die den Aktionsradius einer Ressource näher bestimmen."@de, "A list of interaction types that define the action radius of a resource in more detail."@en ;
+    dct:creator "Justus Henke"@de ;
+    dct:created "2024-09-03"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept 
+        interactivityType:interaction,
+        interactivityType:teachingLearningScenario,
+        interactivityType:contentBlock,
+        interactivityType:curricularBlock,
+        interactivityType:curriculum,
+        interactivityType:universityWide,
+        interactivityType:interUniversity,
+        interactivityType:other .
+
+interactivityType:interaction a skos:Concept ;
+    skos:prefLabel "Interaktion, Handlung"@de, "Interaction, Action"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:teachingLearningScenario a skos:Concept ;
+    skos:prefLabel "Lehr-/Lernsituation, Szenario"@de, "Teaching/Learning Situation, Scenario"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:contentBlock a skos:Concept ;
+    skos:prefLabel "Inhaltlicher Block"@de, "Content Block"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:curricularBlock a skos:Concept ;
+    skos:prefLabel "Curricularer Block"@de, "Curricular Block"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:curriculum a skos:Concept ;
+    skos:prefLabel "Curriculum, Programm"@de, "Curriculum, Program"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:universityWide a skos:Concept ;
+    skos:prefLabel "hochschulweit"@de, "University-wide"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:interUniversity a skos:Concept ;
+    skos:prefLabel "hochschulübergreifend"@de, "Inter-university"@en ;
+    skos:topConceptOf interactivityType: .
+
+interactivityType:other a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de, "Other"@en ;
+    skos:topConceptOf interactivityType: .

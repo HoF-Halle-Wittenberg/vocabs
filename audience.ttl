@@ -32,12 +32,6 @@ audience:Mentor a skos:Concept ;
     skos:exactMatch lrmi:mentor ;
     skos:topConceptOf audience: .
 
-audience:Parent a skos:Concept ;
-    skos:prefLabel "Eltern"@de, "Parents"@en ;
-    skos:definition "Eltern von Studierenden oder anderen Hochschulangehörigen."@de, "Parents of students or other members of the university community."@en ;
-    skos:exactMatch lrmi:parent ;
-    skos:topConceptOf audience: .
-
 audience:PeerTutor a skos:Concept ;
     skos:prefLabel "Peer-Tutor:in"@de, "Peer Tutor"@en ;
     skos:definition "Studierende oder Mitarbeiter:innen, die anderen Studierenden bei ihrem Lernprozess helfen."@de, "Students or staff who assist other students in their learning process."@en ;

@@ -16,6 +16,13 @@
         "en": "External Stakeholders",
         "de": "Außerhochschulische Akteur:innen"
       }
+    },
+    {
+      "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/ExternalPartners",
+      "prefLabel": {
+        "en": "External Cooperation Partners",
+        "de": "Außerhochschulische Kooperationspartner"
+      }
     }
   ],
   "exactMatch": [

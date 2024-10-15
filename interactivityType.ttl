@@ -1,0 +1,187 @@
+@prefix interactivityType: <https://hof-halle-wittenberg.github.io/vocabs/interactivitytype/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+interactivityType: a skos:ConceptScheme ;
+    dct:title "Interaktivitätstypen"@de, "Interactivity Types"@en ;
+    dct:description "Eine Liste von Interaktionstypen und verwandten Konzepten, die einer Ressource zugeordnet werden können."@de, "A list of interactivity types and related concepts that can be assigned to a resource."@en ;
+    dct:creator "Justus Henke"@de ;
+    dct:created "2024-09-03"^^xsd:date ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
+    skos:hasTopConcept 
+        interactivityType:actionRadius,
+        interactivityType:duration,
+        interactivityType:groupSize,
+        interactivityType:virtualizationDegree,
+        interactivityType:synchronicity .
+
+interactivityType:actionRadius a skos:Concept ;
+    skos:prefLabel "Aktionsradius"@de, "Action Radius"@en ;
+    skos:topConceptOf interactivityType: ;
+    skos:narrower 
+        interactivityType:interaction,
+        interactivityType:teachingLearningScenario,
+        interactivityType:contentBlock,
+        interactivityType:curricularBlock,
+        interactivityType:curriculum,
+        interactivityType:universityWide,
+        interactivityType:interUniversity,
+        interactivityType:other .
+
+interactivityType:interaction a skos:Concept ;
+    skos:prefLabel "Interaktion, Handlung"@de, "Interaction, Action"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:teachingLearningScenario a skos:Concept ;
+    skos:prefLabel "Lehr-/Lernsituation, Szenario"@de, "Teaching/Learning Situation, Scenario"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:contentBlock a skos:Concept ;
+    skos:prefLabel "Inhaltlicher Block"@de, "Content Block"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:curricularBlock a skos:Concept ;
+    skos:prefLabel "Curricularer Block"@de, "Curricular Block"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:curriculum a skos:Concept ;
+    skos:prefLabel "Curriculum, Programm"@de, "Curriculum, Program"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:universityWide a skos:Concept ;
+    skos:prefLabel "hochschulweit"@de, "University-wide"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:interUniversity a skos:Concept ;
+    skos:prefLabel "hochschulübergreifend"@de, "Inter-university"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:other a skos:Concept ;
+    skos:prefLabel "Sonstiges"@de, "Other"@en ;
+    skos:broader interactivityType:actionRadius .
+
+interactivityType:duration a skos:Concept ;
+    skos:prefLabel "Zeitdauer"@de, "Duration"@en ;
+    skos:topConceptOf interactivityType: ;
+    skos:narrower 
+        interactivityType:shortFormat,
+        interactivityType:dayFormat,
+        interactivityType:multipleDays,
+        interactivityType:oneSemester,
+        interactivityType:multipleSemesters,
+        interactivityType:unlimited .
+
+interactivityType:shortFormat a skos:Concept ;
+    skos:prefLabel "Kurzformat (1-4 Stunden)"@de, "Short Format (1-4 hours)"@en ;
+    skos:broader interactivityType:duration .
+
+interactivityType:dayFormat a skos:Concept ;
+    skos:prefLabel "Tagesformat"@de, "Day Format"@en ;
+    skos:broader interactivityType:duration .
+
+interactivityType:multipleDays a skos:Concept ;
+    skos:prefLabel "Mehrere Tage/ im Block"@de, "Multiple Days/ Block"@en ;
+    skos:broader interactivityType:duration .
+
+interactivityType:oneSemester a skos:Concept ;
+    skos:prefLabel "ein Semester"@de, "One Semester"@en ;
+    skos:broader interactivityType:duration .
+
+interactivityType:multipleSemesters a skos:Concept ;
+    skos:prefLabel "semesterübergreifend"@de, "Multiple Semesters"@en ;
+    skos:broader interactivityType:duration .
+
+interactivityType:unlimited a skos:Concept ;
+    skos:prefLabel "Beliebig/ unbegrenzt"@de, "Arbitrary/ Unlimited"@en ;
+    skos:broader interactivityType:duration .
+
+interactivityType:groupSize a skos:Concept ;
+    skos:prefLabel "Gruppengröße"@de, "Group Size"@en ;
+    skos:topConceptOf interactivityType: ;
+    skos:narrower 
+        interactivityType:onePerson,
+        interactivityType:twoPeople,
+        interactivityType:smallGroup,
+        interactivityType:mediumGroup,
+        interactivityType:largeGroup,
+        interactivityType:veryLargeGroup,
+        interactivityType:unlimitedGroup .
+
+interactivityType:onePerson a skos:Concept ;
+    skos:prefLabel "Eine Person"@de, "One Person"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:twoPeople a skos:Concept ;
+    skos:prefLabel "Zwei Personen"@de, "Two People"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:smallGroup a skos:Concept ;
+    skos:prefLabel "Kleingruppe"@de, "Small Group"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:mediumGroup a skos:Concept ;
+    skos:prefLabel "Gruppe (etwa 6-30)"@de, "Group (about 6-30)"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:largeGroup a skos:Concept ;
+    skos:prefLabel "Großgruppe (ab 30)"@de, "Large Group (30+)"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:veryLargeGroup a skos:Concept ;
+    skos:prefLabel "Großgruppe (ab 100)"@de, "Very Large Group (100+)"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:unlimitedGroup a skos:Concept ;
+    skos:prefLabel "Beliebig/ unbegrenzt"@de, "Arbitrary/ Unlimited"@en ;
+    skos:broader interactivityType:groupSize .
+
+interactivityType:virtualizationDegree a skos:Concept ;
+    skos:prefLabel "Grad der Virtualisierung"@de, "Degree of Virtualization"@en ;
+    skos:topConceptOf interactivityType: ;
+    skos:narrower 
+        interactivityType:presence,
+        interactivityType:enrichment,
+        interactivityType:integration,
+        interactivityType:virtualization .
+
+interactivityType:presence a skos:Concept ;
+    skos:prefLabel "Präsenz"@de, "Presence"@en ;
+    skos:broader interactivityType:virtualizationDegree .
+
+interactivityType:enrichment a skos:Concept ;
+    skos:prefLabel "Anreicherung"@de, "Enrichment"@en ;
+    skos:broader interactivityType:virtualizationDegree .
+
+interactivityType:integration a skos:Concept ;
+    skos:prefLabel "Integration"@de, "Integration"@en ;
+    skos:broader interactivityType:virtualizationDegree .
+
+interactivityType:virtualization a skos:Concept ;
+    skos:prefLabel "Virtualisierung"@de, "Virtualization"@en ;
+    skos:broader interactivityType:virtualizationDegree .
+
+interactivityType:synchronicity a skos:Concept ;
+    skos:prefLabel "Synchronizität"@de, "Synchronicity"@en ;
+    skos:topConceptOf interactivityType: ;
+    skos:narrower 
+        interactivityType:asynchronous,
+        interactivityType:synchronous,
+        interactivityType:hybrid,
+        interactivityType:notRelevant .
+
+interactivityType:asynchronous a skos:Concept ;
+    skos:prefLabel "asynchron"@de, "asynchronous"@en ;
+    skos:broader interactivityType:synchronicity .
+
+interactivityType:synchronous a skos:Concept ;
+    skos:prefLabel "synchron"@de, "synchronous"@en ;
+    skos:broader interactivityType:synchronicity .
+
+interactivityType:hybrid a skos:Concept ;
+    skos:prefLabel "hybrid"@de, "hybrid"@en ;
+    skos:broader interactivityType:synchronicity .
+
+interactivityType:notRelevant a skos:Concept ;
+    skos:prefLabel "nicht relevant"@de, "not relevant"@en ;
+    skos:broader interactivityType:synchronicity .

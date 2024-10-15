@@ -124,6 +124,12 @@ audience:ExternalStakeholder a skos:Concept ;
     skos:definition "Personen oder Organisationen außerhalb der Hochschule, die an den Aktivitäten der Hochschule beteiligt sind."@de, "Individuals or organizations outside the university who are involved in the activities of the university."@en ;
     skos:broader audience:Public .
 
+audience:ExternalPartners a skos:Concept ;
+    skos:prefLabel "Außerhochschulische Kooperationspartner"@de, "External Cooperation Partners"@en ;
+    skos:definition "Personen oder Organisationen außerhalb der Hochschule, die mit der Hochschule in formaler Kooperation stehen."@de, "Individuals or organisations outside the university who are in formal cooperation with the university."@en ;
+    skos:broader audience:Public .
+
+
 audience:ITServices a skos:Concept ;
     skos:prefLabel "Rechenzentrum/IT-Services"@de, "Data Center/IT Services"@en ;
     skos:definition "Einrichtung oder Abteilung, die für die Bereitstellung und den Betrieb der IT-Infrastruktur an der Hochschule verantwortlich ist."@de, "Facility or department responsible for the provision and operation of the IT infrastructure at the university."@en ;

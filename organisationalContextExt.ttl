@@ -37,7 +37,7 @@ orgContext:StrategicSupport a skos:Concept ;
     skos:narrower orgContext:ProgramIntroduction, orgContext:ExaminationAdministration, orgContext:DevelopmentPlans, orgContext:GuidelineDevelopment, orgContext:Appointments, orgContext:Enrollment, orgContext:ExaminationAffairs, orgContext:Evaluation, orgContext:InterUniversityNetworking .
 
 orgContext:ResearchAndTransferSupport a skos:Concept ;
-    skos:prefLabel "Forschungs- und Transferunterstützung"@de, "research and transfer support"@en ;
+    skos:prefLabel "Forschungs- und Transfersupport"@de, "research and transfer support"@en ;
     skos:definition "Die Ressource bietet Unterstützung im Bereich Forschung und Wissenstransfer."@de, "The resource provides support in the area of research and knowledge transfer."@en ;
     skos:topConceptOf orgContext: ;
     skos:narrower orgContext:ResearchFunding, orgContext:ProjectManagement, orgContext:CollaborationInitiatives, orgContext:KnowledgeTransfer, orgContext:PublicationsSupport .

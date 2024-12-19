@@ -15,7 +15,7 @@ audience: a skos:ConceptScheme ;
 
 # Erste Ebene der Zielgruppen
 audience:Administrator a skos:Concept ;
-    skos:prefLabel "Verwaltung"@de, "Administration"@en ;
+    skos:prefLabel "Verwaltung & Management"@de, "Administration & Management"@en ;
     skos:definition "Personen, die administrative Aufgaben an der Hochschule ausüben."@de, "Individuals responsible for administrative tasks at the university."@en ;
     skos:exactMatch lrmi:administrator ;
     skos:topConceptOf audience: .

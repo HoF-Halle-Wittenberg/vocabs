@@ -2,8 +2,8 @@
   "id": "https://hof-halle-wittenberg.github.io/vocabs/audience/Administrator",
   "type": "Concept",
   "prefLabel": {
-    "en": "Administration",
-    "de": "Verwaltung"
+    "en": "Administration & Management",
+    "de": "Verwaltung & Management"
   },
   "definition": {
     "en": "Individuals responsible for administrative tasks at the university.",
